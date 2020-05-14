@@ -1,5 +1,6 @@
 package loginTests;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import bases.TestBase;
