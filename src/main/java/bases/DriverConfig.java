@@ -18,7 +18,7 @@ public class DriverConfig {
 	public static Wait<WebDriver> WAIT_FLUENT;
 	
 	public static void createDriver() {
-		//System.setProperty("webdriver.chrome.driver", "/drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		DRIVER = new ChromeDriver();
 	}

@@ -4,9 +4,16 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import bases.TestBase;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import pages.LoginPage;
 
-public class LoginTest extends TestBase {
+import java.util.Collections;
+
+public class LoginTest extends TestBase{
 	
 	private LoginPage loginPage;
 	private String url = "http://blazedemo.com/login";
@@ -24,4 +31,5 @@ public class LoginTest extends TestBase {
 		loginPage.setPassword(password);
 		loginPage.clickLogin();
 	}
+
 }
